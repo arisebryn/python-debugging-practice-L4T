@@ -32,6 +32,8 @@ def check_word_guessed():
     print("".join(guessed_word))
 
 def player_guessed_word():
+    global secret_word, letters_guessed
+
     for letter in secret_word:
         if not (letter in letters_guessed):
             word_guessed = False
